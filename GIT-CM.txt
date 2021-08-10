@@ -1,0 +1,110 @@
+01: GIT
+Controle de versão
+
+CVS
+SVN
+
+GIT
+>git tag //versoes
+>git diff v0.1 v0.2 //alterações
+>git blame css/index.css  //alterações linha por linha
+(github)
+>git clone (URL)
+	>cd repositorio
+	>ls
+
+------------------------------------------------------
+PUSH
+Cria repositorio
+LINK
+
+>git remote add origin(qualquer nome) (LINK)
+>git push origin master
+
+//apos fazer edicao:
+>git add (arquivo)
+>git commit -m "mensagem"
+>git push origin master
+
+>git clone (LINK) //copiar
+>git pull origin master //sinc novas alteracoes
+
+------------------------------------------------------
+BRANCH
+>git branch //visualiza
+>git branch [nome da nova branch] //cria
+>git checkout [nome] //muda para a escolhida
+>git push origin [nome]
+>git push -u origin [nome] //ligacao entre nossa branch e branch remota
+
+
+-----------------------------------------------------
+CONFLITO
+//como resolver
+>git pull //envia
+CORRIGE O ARQUIVO
+>git add [arquivo]
+>git commit -m "merge mensagem"
+>git push
+>git pull //atualiza
+
+----------------------------------------------------
+>git rebase master [nome da branch] //atualizar desenvolvimento com base da master -uma com base na outra-
+>git merge [nome da branch] //traz tudo de uma branch para a atual
+
+>git rebase master //aplicar os commits que faltam na branch
+
+----------------------------------------------------
+*Controle avançado de alterações
+
+----------------------------------------------------
+====================================================
+//ADD NOVO REPOSITORIO
+>git remote
+>git remote add [apelido] [URL]
+>git push [apelido] [branch principal]
+====================================================
+//ENVIAR PARA REPOSITORIO LOCAL
+>git checkout [PRINCIPAL]
+>git pull
+>git checkout desenvolvimento
+>git rebase [PRINCIPAL]
+>git checkout [PRINCIPAL}
+>git merge desenvolvimento
+>git push
+====================================================
+//ENVIAR PARA REPOSITORIO REMOTO
+>git push [REPOSITORIO DESTINO] [BRANCH USADA]
+====================================================
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+//CURSOS 
+>git init
+>git add .
+
+>git status
+
+>git commit -m "first commit"
+>git remote add origin [URL]
+>git branch -m main
+>git push -u origin main
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
